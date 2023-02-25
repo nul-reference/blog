@@ -5,13 +5,15 @@ packages:
 oauth: pages.sr.ht/PAGES:RW
 environment:
   site: nul.srht.site
+secrets:
+  - b4ea4c07-d545-4333-81d3-4a21371c6b0b
 sources:
   - git@git.sr.ht:~nul/nul.srht.site
 tasks:
-- build: |
-    cd $site
-    hugo
-- package: |
-    tar -C public -cvz . > ../site.tar.gz
-- upload: |
-    hut pages publish -d &site site.tar.gz
+  - build: |
+      cd $site
+      hugo
+  - package: |
+      tar -C public -cvz . > ../site.tar.gz
+  - upload: |
+      hut pages publish -d &site site.tar.gz
