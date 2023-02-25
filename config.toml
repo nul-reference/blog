@@ -1,59 +1,62 @@
 baseURL = "https://nul.srht.site/"
-languageCode = "en-us"
 title = "Nul's Litterbox"
-theme = "risotto"
+languageCode = "en-us"
+theme = "hello-friend-ng"
 author = "Underscore Nul"
 copyright = "(c) 2023 Underscore Nul"
+enableGitInfo = true
 
 # Automatically add content sections to main menu
 sectionPagesMenu = "main"
 
 [params]
-noindex = false
-
-[params.theme]
-palette = "base16-dark"
-
-[params.about]
-title = "@nul"
+homeSubtitle = "Projects and Rants from Underscore Nul"
 description = "Clouded Leopard fur, rust dev, chronically online shitposter."
-
-[[params.socialLinks]]
-icon = "fa-brands fa-mastodon"
-title = "Mastodon"
-url = "https://bark.lgbt/@nul"
-
-[[params.socialLinks]]
-icon = "fa-solid fa-message"
-title = "Matrix"
-url = "https://matrix.to/#/@nul:bark.lgbt"
-
-[[params.socialLinks]]
-icon = "fa-solid fa-envelope"
-title = "Email"
-url = "mailto:underscore.nul@proton.me"
-
-[menu]
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 10
 
 [taxonomies]
 category = "categories"
 tag = "tags"
-series = "series"
+project = "projects"
 
-[markup.goldmark.renderer]
-unsafe = true
+[[params.social]]
+name = "mastodon"
+url = "https://bark.lgbt/@nul"
 
-[privacy]
-[privacy.twitter]
-disabled = false
-disableDNT = true
-simple = true
+[[params.social]]
+name = "matrix"
+url = "https://matrix.to/#/@nul:bark.lgbt"
 
-[privacy.youtube]
-disabled = false
-privacyEnhanced = true
+[[params.social]]
+name = "email"
+url = "mailto:underscore.nul@proton.me"
+
+[[params.social]]
+name = "git"
+url = "https://git.sr.ht/~nul"
+
+[languages]
+[languages.en]
+title = "Nul's Litterbox"
+[languages.en.params.logo]
+logoText = "Nul's Litterbox"
+logoHomeLink = "/"
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
