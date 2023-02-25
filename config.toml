@@ -13,6 +13,11 @@ sectionPagesMenu = "main"
 homeSubtitle = "Projects and Rants from Underscore Nul"
 description = "Clouded Leopard fur, rust dev, chronically online shitposter."
 
+[params.logo]
+logoText = "Nul's Litterbox"
+logoHomeLink = "/"
+logoCursorColor = "#5AA"
+
 [taxonomies]
 category = "categories"
 tag = "tags"
@@ -34,12 +39,6 @@ url = "mailto:underscore.nul@proton.me"
 name = "git"
 url = "https://git.sr.ht/~nul"
 
-[languages]
-[languages.en]
-title = "Nul's Litterbox"
-[languages.en.params.logo]
-logoText = "Nul's Litterbox"
-logoHomeLink = "/"
 
 [[menu.main]]
 identifier = "about"
