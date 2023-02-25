@@ -17,4 +17,4 @@ tasks:
       cd $site
       tar -C public -cvz . > ../site.tar.gz
   - upload: |
-      hut pages publish -d &site site.tar.gz
+      hut pages publish -d $site site.tar.gz
