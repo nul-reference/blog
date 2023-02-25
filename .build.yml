@@ -1,0 +1,17 @@
+image: alpine/latest
+packages:
+  - hugo
+  - hut
+oauth: pages.sr.ht/PAGES:RW
+environment:
+  site: nul.srht.site
+sources:
+  - https://git.sr.ht/~nul/nul.srht.site
+tasks:
+- build: |
+    cd $site
+    hugo
+- package: |
+    tar -C public -cvz . > ../site.tar.gz
+- upload: |
+    hut pages publish -d &site site.tar.gz

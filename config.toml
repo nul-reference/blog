@@ -1,0 +1,59 @@
+baseURL = "https://nul.srht.site/"
+languageCode = "en-us"
+title = "Nul's Litterbox"
+theme = "risotto"
+author = "Underscore Nul"
+copyright = "(c) 2023 Underscore Nul"
+
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
+
+[params]
+noindex = false
+
+[params.theme]
+palette = "base16-dark"
+
+[params.about]
+title = "@nul"
+description = "Clouded Leopard fur, rust dev, chronically online shitposter."
+
+[[params.socialLinks]]
+icon = "fa-brands fa-mastodon"
+title = "Mastodon"
+url = "https://bark.lgbt/@nul"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-message"
+title = "Matrix"
+url = "https://matrix.to/#/@nul:bark.lgbt"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-envelope"
+title = "Email"
+url = "mailto:underscore.nul@proton.me"
+
+[menu]
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[privacy]
+[privacy.twitter]
+disabled = false
+disableDNT = true
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
