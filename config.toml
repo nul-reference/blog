@@ -1,4 +1,4 @@
-baseURL = "https://nul.srht.site/"
+baseURL = "https://nuls.page/"
 title = "Nul's Litterbox"
 languageCode = "en-us"
 theme = "hello-friend-ng"
@@ -37,7 +37,7 @@ url = "mailto:underscore.nul@proton.me"
 
 [[params.social]]
 name = "git"
-url = "https://git.sr.ht/~nul"
+url = "https://github.com/nul-reference"
 
 
 [[menu.main]]
